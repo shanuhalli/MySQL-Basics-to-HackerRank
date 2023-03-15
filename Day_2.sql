@@ -145,7 +145,7 @@ city VARCHAR(100) DEFAULT 'Hyderabad'
 );
 
 INSERT INTO default_table VALUES(1,'Prakash',25,'Bangalore');
-INSERT INTO default_table VALUES(2,'Priya',20,'Bangalore');   -- ERROR since age is <=22
+INSERT INTO default_table VALUES(2,'Priya',20,'Bangalore');   -- ERROR since age is <= 22
 INSERT INTO default_table VALUES(2,'Priya',50,'Bangalore');   -- ERROR since age is >= 40
 INSERT INTO default_table VALUES(2,'Priya',30,'Bangalore'); 
 SELECT * FROM default_table;
