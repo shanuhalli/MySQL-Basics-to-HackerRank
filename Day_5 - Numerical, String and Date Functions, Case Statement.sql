@@ -954,13 +954,13 @@ SELECT DISTINCT status FROM Employees;
 -- END as col_name
 
 SELECT concat(first," ",last) as fullname,  salary, CASE
-													WHEN salary >= 50000 THEN "HIGH PAID"
+                                                    WHEN salary >= 50000 THEN "HIGH PAID"
                                                     WHEN salary < 50000 THEN "less paid"
                                                     END AS "category"
 FROM employees;
                              
 SELECT concat(first," ",last) as fullname,  salary, CASE
-													WHEN salary >= 50000 THEN "HIGH PAID"
+                                                    WHEN salary >= 50000 THEN "HIGH PAID"
                                                     ELSE "less"
                                                     END AS "category"
 FROM employees;
@@ -977,9 +977,7 @@ SELECT
     CASE 
 	  WHEN YEAR(hiredate) BETWEEN 1999 AND 2005 THEN 'Super Senior' 
 	  WHEN YEAR(hiredate) > 2005 && YEAR(hiredate) <= 2009 THEN 'Senior' 
-      ELSE 'Junior' 
-	END AS Emp_type 
-FROM 
-    employees;
+    ELSE 'Junior' 
+    END AS Emp_type FROM employees;
 
 -- =============================================== THE END ===============================================

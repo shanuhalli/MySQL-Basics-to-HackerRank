@@ -90,8 +90,8 @@ population_count INT CHECK(population_count > 0)
 );
 
 INSERT INTO COUNTRY VALUES(1,'India',1500000000),
-						  (2,'China',2000000000),
-						  (3,'Pakistan',5000000),
+                          (2,'China',2000000000),
+                          (3,'Pakistan',5000000),
                           (4,'America',10000000),
                           (5,'Rusya',25000000),
                           (6,'Nepal',100000),
