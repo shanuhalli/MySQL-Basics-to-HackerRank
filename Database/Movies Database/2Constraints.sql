@@ -1,0 +1,26 @@
+use Movies;
+
+ALTER TABLE Film ADD  CONSTRAINT FK_Film_Certificate FOREIGN KEY(CertificateID)
+REFERENCES Certificate (CertificateID);
+
+ALTER TABLE Film    ADD  CONSTRAINT FK_Film_Country FOREIGN KEY(CountryID)
+REFERENCES Country (CountryID);
+
+ALTER TABLE Film    ADD  CONSTRAINT FK_Film_Director FOREIGN KEY(DirectorID)
+REFERENCES Director (DirectorID);
+
+ALTER TABLE Film    ADD  CONSTRAINT FK_Film_Genre FOREIGN KEY(GenreID)
+REFERENCES Genre (GenreID);
+
+ALTER TABLE Film    ADD  CONSTRAINT FK_Film_Language FOREIGN KEY(LanguageID)
+REFERENCES Language (LanguageID);
+
+ALTER TABLE Film    ADD  CONSTRAINT FK_Film_Studio FOREIGN KEY(StudioID)
+REFERENCES Studio (StudioID);
+
+ALTER TABLE Role    ADD  CONSTRAINT FK_Role_Actor FOREIGN KEY(ActorID)
+REFERENCES Actor (ActorID);
+
+ALTER TABLE Role    ADD  CONSTRAINT FK_Role_Film FOREIGN KEY(FilmID)
+REFERENCES Film (FilmID);
+
