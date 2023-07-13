@@ -1,4 +1,3 @@
-
 INSERT Language (LanguageID, Language) VALUES (1, N'English');
 INSERT Language (LanguageID, Language) VALUES (2, N'Cantonese');
 INSERT Language (LanguageID, Language) VALUES (3, N'French');

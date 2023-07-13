@@ -1,4 +1,3 @@
-
 Insert into Ball_by_Ball(Match_Id,Over_Id,Ball_Id,Innings_No,Team_Batting,Team_Bowling,Striker_Batting_Position,Striker,Non_Striker,Bowler) Values 
 (392238,1,2,2,1,5,1,2,1,126),
 (392238,1,3,1,5,1,1,183,168,104),

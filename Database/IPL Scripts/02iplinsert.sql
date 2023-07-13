@@ -12,7 +12,6 @@ Insert into Country(Country_Id,Country_Name) Values
 (11,'Bangladesh'),
 (12,'Netherlands');
 
-
 Insert into City (City_Id,City_Name,Country_id) Values
 (1,'Bangalore',1),
 (2,'Chandigarh',1),

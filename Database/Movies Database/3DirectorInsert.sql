@@ -105,7 +105,6 @@ INSERT Country (CountryID, Country) VALUES (530, N'Jamaica');
 INSERT Country (CountryID, Country) VALUES (531, N'Jordan');
 INSERT Country (CountryID, Country) VALUES (532, N'Kazakhstan');
 INSERT Country (CountryID, Country) VALUES (533, N'Kenya');
-
 INSERT Country (CountryID, Country) VALUES (534, N'Kiribati');
 INSERT Country (CountryID, Country) VALUES (535, N'Kosovo');
 INSERT Country (CountryID, Country) VALUES (536, N'Kuwait');
@@ -310,7 +309,6 @@ INSERT Director (DirectorID, FirstName, FamilyName, DoB, DoD, Gender) VALUES (10
 INSERT Director (DirectorID, FirstName, FamilyName, DoB, DoD, Gender) VALUES (101, N'Richard', N'Attenborough', CAST(N'1923-08-29T00:00:00.000' AS DateTime), NULL, N'Male');
 INSERT Director (DirectorID, FirstName, FamilyName, DoB, DoD, Gender) VALUES (102, N'Kurt', N'Wimmer', NULL, NULL, N'Male');
 INSERT Director (DirectorID, FirstName, FamilyName, DoB, DoD, Gender) VALUES (103, N'Robert', N'Rodriguez', CAST(N'1968-06-20T00:00:00.000' AS DateTime), NULL, N'Male');
-
 INSERT Director (DirectorID, FirstName, FamilyName, DoB, DoD, Gender) VALUES (104, N'Larry', N'Charles', CAST(N'1956-02-20T00:00:00.000' AS DateTime), NULL, N'Male');
 INSERT Director (DirectorID, FirstName, FamilyName, DoB, DoD, Gender) VALUES (105, N'Zhang', N'Yimou', CAST(N'1951-11-14T00:00:00.000' AS DateTime), NULL, N'Male');
 INSERT Director (DirectorID, FirstName, FamilyName, DoB, DoD, Gender) VALUES (106, N'Edgar', N'Wright', CAST(N'1974-04-18T00:00:00.000' AS DateTime), NULL, N'Male');
@@ -411,7 +409,6 @@ INSERT Director (DirectorID, FirstName, FamilyName, DoB, DoD, Gender) VALUES (20
 INSERT Director (DirectorID, FirstName, FamilyName, DoB, DoD, Gender) VALUES (210, N'Sydney', N'Pollack', CAST(N'1934-07-01T00:00:00.000' AS DateTime), CAST(N'2008-05-26T00:00:00.000' AS DateTime), N'Male');
 INSERT Director (DirectorID, FirstName, FamilyName, DoB, DoD, Gender) VALUES (211, N'Adrian', N'Lyne', CAST(N'1941-03-04T00:00:00.000' AS DateTime), NULL, N'Male');
 INSERT Director (DirectorID, FirstName, FamilyName, DoB, DoD, Gender) VALUES (212, N'Nora', N'Ephron', CAST(N'1941-05-19T00:00:00.000' AS DateTime), CAST(N'2012-06-26T00:00:00.000' AS DateTime), N'Female');
-
 INSERT Director (DirectorID, FirstName, FamilyName, DoB, DoD, Gender) VALUES (213, N'Jonathan', N'Demme', CAST(N'1944-02-22T00:00:00.000' AS DateTime), NULL, N'Male');
 INSERT Director (DirectorID, FirstName, FamilyName, DoB, DoD, Gender) VALUES (214, N'Alan J.', N'Pakula', CAST(N'1928-04-07T00:00:00.000' AS DateTime), CAST(N'1998-11-19T00:00:00.000' AS DateTime), N'Male');
 INSERT Director (DirectorID, FirstName, FamilyName, DoB, DoD, Gender) VALUES (215, N'Ron', N'Clements', CAST(N'1953-04-25T00:00:00.000' AS DateTime), NULL, N'Male');
@@ -512,7 +509,6 @@ INSERT Director (DirectorID, FirstName, FamilyName, DoB, DoD, Gender) VALUES (31
 INSERT Director (DirectorID, FirstName, FamilyName, DoB, DoD, Gender) VALUES (314, N'Joseph L.', N'Mankiewicz', CAST(N'1909-02-11T00:00:00.000' AS DateTime), CAST(N'1993-02-05T00:00:00.000' AS DateTime), N'Male');
 INSERT Director (DirectorID, FirstName, FamilyName, DoB, DoD, Gender) VALUES (315, N'John', N'Ford', CAST(N'1894-02-01T00:00:00.000' AS DateTime), CAST(N'1973-08-31T00:00:00.000' AS DateTime), N'Male');
 INSERT Director (DirectorID, FirstName, FamilyName, DoB, DoD, Gender) VALUES (316, N'Stanley', N'Kramer', CAST(N'1913-09-29T00:00:00.000' AS DateTime), CAST(N'2001-02-19T00:00:00.000' AS DateTime), N'Male');
-
 INSERT Director (DirectorID, FirstName, FamilyName, DoB, DoD, Gender) VALUES (317, N'Alfred', N'Hitchcock', CAST(N'1899-08-13T00:00:00.000' AS DateTime), CAST(N'1980-04-29T00:00:00.000' AS DateTime), N'Male');
 INSERT Director (DirectorID, FirstName, FamilyName, DoB, DoD, Gender) VALUES (318, N'Ken', N'Annakin', CAST(N'1914-08-10T00:00:00.000' AS DateTime), CAST(N'2009-04-22T00:00:00.000' AS DateTime), N'Male');
 INSERT Director (DirectorID, FirstName, FamilyName, DoB, DoD, Gender) VALUES (319, N'Lewis', N'Milestone', CAST(N'1895-09-30T00:00:00.000' AS DateTime), CAST(N'1980-09-25T00:00:00.000' AS DateTime), N'Male');
@@ -613,7 +609,6 @@ INSERT Director (DirectorID, FirstName, FamilyName, DoB, DoD, Gender) VALUES (41
 INSERT Director (DirectorID, FirstName, FamilyName, DoB, DoD, Gender) VALUES (417, N'Mikael', N'Hafstrom', CAST(N'1960-07-01T00:00:00.000' AS DateTime), NULL, N'Male');
 INSERT Director (DirectorID, FirstName, FamilyName, DoB, DoD, Gender) VALUES (418, N'Kim', N'Jee-woon', CAST(N'1964-07-06T00:00:00.000' AS DateTime), NULL, N'Male');
 INSERT Director (DirectorID, FirstName, FamilyName, DoB, DoD, Gender) VALUES (419, N'McG', NULL, CAST(N'1968-08-09T00:00:00.000' AS DateTime), NULL, N'Male');
-
 INSERT Director (DirectorID, FirstName, FamilyName, DoB, DoD, Gender) VALUES (420, N'Peter', N'Hyams', CAST(N'1943-07-26T00:00:00.000' AS DateTime), NULL, N'Male');
 INSERT Director (DirectorID, FirstName, FamilyName, DoB, DoD, Gender) VALUES (421, N'John', N'Irvin', CAST(N'1940-05-07T00:00:00.000' AS DateTime), NULL, N'Male');
 INSERT Director (DirectorID, FirstName, FamilyName, DoB, DoD, Gender) VALUES (422, N'Mark L.', N'Lester', CAST(N'1946-11-26T00:00:00.000' AS DateTime), NULL, N'Male');
@@ -702,4 +697,3 @@ INSERT Director (DirectorID, FirstName, FamilyName, DoB, DoD, Gender) VALUES (50
 INSERT Director (DirectorID, FirstName, FamilyName, DoB, DoD, Gender) VALUES (506, N'Stuart', N'Burge', CAST(N'1918-01-15T00:00:00.000' AS DateTime), CAST(N'2002-01-24T00:00:00.000' AS DateTime), N'Male');
 INSERT Director (DirectorID, FirstName, FamilyName, DoB, DoD, Gender) VALUES (507, N'Nicholas', N'Ray', CAST(N'1911-08-07T00:00:00.000' AS DateTime), CAST(N'1979-06-16T00:00:00.000' AS DateTime), N'Male');
 INSERT Director (DirectorID, FirstName, FamilyName, DoB, DoD, Gender) VALUES (508, N'Les', N'Mayfield', NULL, NULL, N'Male');
-

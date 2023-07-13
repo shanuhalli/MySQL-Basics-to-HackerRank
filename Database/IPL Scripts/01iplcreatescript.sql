@@ -1,6 +1,6 @@
- Create database IPL ;
+Create database IPL ;
  
- Use IPL ;
+Use IPL ;
 
 CREATE TABLE Country(
 	Country_Id int Primary key NOT NULL,
@@ -45,7 +45,6 @@ CREATE TABLE Outcome(
 	Outcome_Type varchar(200) NOT NULL
 );
 
-
 CREATE TABLE Out_Type(
 	Out_Id int  primary key NOT NULL,
 	Out_Name varchar(250) NOT NULL
@@ -74,7 +73,6 @@ CREATE TABLE Rolee(
 	Role_Desc varchar(150) NOT NULL
 );
 
-
 CREATE TABLE Season(
 	Season_Id int primary key NOT NULL,
 	Man_of_the_Series int NOT NULL,
@@ -91,7 +89,6 @@ REFERENCES Player (Player_Id);
 
 ALTER TABLE Season  ADD  CONSTRAINT FK_Purple FOREIGN KEY(Purple_Cap)
 REFERENCES Player (Player_Id);
-
 
 CREATE TABLE Umpire(
 	Umpire_Id int primary key NOT NULL,
@@ -138,17 +135,14 @@ REFERENCES Toss_Decision (Toss_Id);
 ALTER TABLE ipl.Match  ADD  CONSTRAINT FK_manofmatch FOREIGN KEY(Man_of_the_Match)
 REFERENCES Player (Player_Id);
 
-
 ALTER TABLE ipl.Match ADD  CONSTRAINT fk_outcome FOREIGN KEY(Outcome_type)
 REFERENCES Outcome (Outcome_Id);
-
 
 ALTER TABLE ipl.Match  ADD  CONSTRAINT fk_seasonn FOREIGN KEY(Season_Id)
 REFERENCES Season (Season_Id);
 
 ALTER TABLE ipl.Match  ADD  CONSTRAINT fk_team1 FOREIGN KEY(Team_1)
 REFERENCES Team (Team_Id);
-
 
 ALTER TABLE ipl.Match ADD  CONSTRAINT fk_team2 FOREIGN KEY(Team_2)
 REFERENCES Team (Team_Id);
@@ -162,10 +156,8 @@ REFERENCES Team (Team_Id);
 ALTER TABLE ipl.Match ADD  CONSTRAINT fk_winner2 FOREIGN KEY(Toss_Winner)
 REFERENCES Team (Team_Id);
 
-
 ALTER TABLE ipl.Match  ADD  CONSTRAINT fk_wintype FOREIGN KEY(Win_Type)
 REFERENCES Win_By (Win_Id);
-
 
 CREATE TABLE Ball_by_Ball(
 	Match_Id bigint NOT NULL,
@@ -218,7 +210,6 @@ CREATE TABLE Batsman_Scored(
 ALTER TABLE Batsman_Scored  ADD  CONSTRAINT FK_Matchh_Ba FOREIGN KEY(Match_Id, Over_Id, Ball_Id, Innings_No)
 REFERENCES Ball_by_Ball (Match_Id, Over_Id, Ball_Id, Innings_No);
 
-
 CREATE TABLE Player_Match(
 	Match_Id bigint NOT NULL,
 	Player_Id int NOT NULL,
@@ -250,7 +241,6 @@ PRIMARY KEY CLUSTERED
 	Extra_Id ASC
 ));
 
-
 CREATE TABLE Extra_Runs(
 	Match_Id bigint NOT NULL,
 	Over_Id int NOT NULL,
@@ -272,8 +262,6 @@ REFERENCES Extra_Type (Extra_Id);
 ALTER TABLE Extra_Runs  ADD  CONSTRAINT FK_Matchh_ext FOREIGN KEY(Match_Id, Over_Id, Ball_Id, Innings_No)
 REFERENCES Ball_by_Ball (Match_Id, Over_Id, Ball_Id, Innings_No);
 
-
-
 CREATE TABLE Wicket_Taken(
 	Match_Id bigint NOT NULL,
 	Over_Id int NOT NULL,
@@ -293,7 +281,6 @@ CREATE TABLE Wicket_Taken(
 ALTER TABLE Wicket_Taken  ADD  CONSTRAINT fk_field8 FOREIGN KEY(Fielders)
 REFERENCES Player (Player_Id);
 
-
 ALTER TABLE Wicket_Taken  ADD  CONSTRAINT fk_kind8 FOREIGN KEY(Kind_Out)
 REFERENCES Out_Type (Out_Id);
 
@@ -302,14 +289,3 @@ REFERENCES Ball_by_Ball (Match_Id, Over_Id, Ball_Id, Innings_No);
 
 ALTER TABLE Wicket_Taken  ADD  CONSTRAINT fk_player8 FOREIGN KEY(Player_Out)
 REFERENCES Player (Player_Id);
-
-
-
-
-
-
-
-
-
-
-

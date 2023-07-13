@@ -1,5 +1,4 @@
 Create database if not exists Movies ;
-
 Use Movies;
 
 CREATE TABLE Actor(
@@ -11,12 +10,10 @@ CREATE TABLE Actor(
 	DoD datetime NULL,
 	Gender nvarchar(20) NULL);
 
-
 -- table of certificates
 CREATE TABLE Certificate(
 	CertificateID int  NOT NULL PRIMARY KEY auto_increment,
 	Certificate nvarchar(10) NOT NULL);
-
 
 -- table of countries
 CREATE TABLE Country(
@@ -51,7 +48,6 @@ CREATE TABLE Film(
 	OscarNominations tinyint NULL,
 	OscarWins tinyint NULL);
 
-
 -- table of genres
  CREATE TABLE Genre(
 	GenreID int NOT NULL PRIMARY KEY auto_increment,
@@ -62,8 +58,6 @@ CREATE TABLE Language(
 	LanguageID int  NOT NULL PRIMARY KEY auto_increment,
 	Language nvarchar(255) NOT NULL);
 
-
-
 -- table of roles
 CREATE TABLE Role(
 	RoleID int NOT NULL PRIMARY KEY auto_increment,
@@ -71,9 +65,7 @@ CREATE TABLE Role(
 	FilmID int NULL,
 	ActorID int NULL);
 
-
-
 -- table of studios
 CREATE TABLE Studio(
 	StudioID int NOT NULL PRIMARY KEY auto_increment,
-	Studio nvarchar(255) NOT NULL)
+	Studio nvarchar(255) NOT NULL);
