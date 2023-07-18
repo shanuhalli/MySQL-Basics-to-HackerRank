@@ -234,4 +234,18 @@ from employees.employees
 Group by Department
 Order by Department asc ;
 
--- ======================================================== THE END ========================================================
+# Final account balance of each UserId -- Use paypal database
+
+Select
+UserId,
+Sum(case when TransactionType = 'Deposit' then Amount else 0 end) - 
+(Sum(case when TransactionType = 'Withdraw' then Amount else 0 end)) as Balance
+from paypal.accountmaster
+Group by UserId ;
+
+Select
+UserId,
+Sum(case when TransactionType = 'Deposit' then Amount else - Amount end) as Balance
+from paypal.accountmaster
+Group by UserId ;
+-- ============================================ THE END ============================================
