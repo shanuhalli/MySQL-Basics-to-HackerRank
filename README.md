@@ -389,3 +389,103 @@ ORDER BY C.COMPANY_CODE ASC;
 ```
 
   </details>
+
+<details>
+  <summary><h2>3. Aggregation<h2></summary>
+  <br/>
+    
+### The CITY table is described as follows:
+
+![image](https://github.com/shanuhalli/MySQL-Basics-to-HackerRank/assets/109328924/f31bf21c-e26a-4b11-ad94-22141a47d2d5)
+
+## Q1. Revising Aggregations - The Count Function
+
+Query a count of the number of cities in CITY having a Population larger than.
+
+Solution:
+```sql
+SELECT COUNT (*) FROM CITY WHERE POPULATION > 100000;
+```
+
+## Q2. Revising Aggregations - The Sum Function
+
+Query the total population of all cities in CITY where District is California.
+
+Solution:
+```sql
+SELECT SUM(POPULATION) FROM CITY WHERE DISTRICT = 'California';
+```
+
+## Q3. Revising Aggregations – Averages
+
+Query the average population of all cities in CITY where District is California.
+
+Solution:
+```sql
+SELECT AVG(POPULATION) FROM CITY WHERE DISTRICT = 'California'
+```
+
+## Q4. Average Population
+
+Query the average population for all cities in CITY, rounded down to the nearest integer.
+
+Solution:
+```sql
+SELECT FLOOR(AVG(POPULATION)) FROM CITY
+```
+
+## Q5. Japan Population
+
+Query the sum of the populations for all Japanese cities in CITY. The COUNTRYCODE for Japan is JPN.
+
+Solution:
+```sql
+SELECT SUM(POPULATION) FROM CITY WHERE COUNTRYCODE = 'JPN'
+```
+
+## Q6. Population Density Difference
+
+Query the difference between the maximum and minimum populations in CITY.
+
+Solution:
+```sql
+SELECT MAX(POPULATION) - MIN(POPULATION) FROM CITY
+```
+
+## Q7. The Blunder
+
+Samantha was tasked with calculating the average monthly salaries for all employees in the EMPLOYEES table, but did not realize her keyboard's 0 key was broken until after completing the calculation. She wants your help finding the difference between her miscalculation (using salaries with any zeros removed), and the actual average salary.
+
+Write a query calculating the amount of error (i.e.: Actual - Miscalculated average monthly salaries), and round it up to the next integer.
+
+### The EMPLOYEES table is described as follows:
+
+![image](https://github.com/shanuhalli/MySQL-Basics-to-HackerRank/assets/109328924/42239c9f-7993-4065-939c-fedf04539086)
+ 
+**Note:** Salary is per month.
+
+**Constraints:** 1000 < Salary < 10**5
+
+Solution:
+```sql
+SELECT CEIL(AVG(SALARY) - AVG (REPLACE (SALARY, '0', ''))) FROM EMPLOYEES;
+```
+
+## Q8. Top Earners
+We define an employee's total earnings to be their monthly salary * months worked, and the maximum total earnings to be the maximum total earnings for any employee in the Employee table. Write a query to find the maximum total earnings for all employees as well as the total number of employees who have maximum total earnings. Then print these values as 2 space-separated integers.
+
+### The Employee table containing employee data for a company is described as follows:
+
+![image](https://github.com/shanuhalli/MySQL-Basics-to-HackerRank/assets/109328924/982aa094-9312-478c-b225-ec6b798ddc32)
+ 
+where employee_id is an employee's ID number, name is their name, months is the total number of months they've been working for the company, and salary is their monthly salary.
+
+Solution:
+```sql
+SELECT MONTHS * SALARY AS EARNINGS, COUNT (*) FROM EMPLOYEE
+GROUP BY EARNINGS
+ORDER BY EARNINGS DESC
+LIMIT 1;
+```
+
+</details>
