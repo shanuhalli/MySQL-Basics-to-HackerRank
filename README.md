@@ -9,7 +9,7 @@
 
 ### The CITY table is described as follows:
 
-![1449729804-f21d187d0f-CITY](https://github.com/shanuhalli/Practice-MySQL/assets/109328924/dbb4a313-b8c2-44a6-a054-2c91c9308275)
+![image](https://github.com/shanuhalli/MySQL-Basics-to-HackerRank/assets/109328924/86129f64-5081-4062-8b63-92123ad9ecad)
 
 ## Q1. Revising the Select Query I
 
@@ -67,7 +67,7 @@ SELECT NAME FROM CITY WHERE COUNTRYCODE = 'JPN';
 
 ### The STATION table is described as follows:
 
-![image](https://github.com/shanuhalli/Practice-MySQL/assets/109328924/07a885c8-5994-489f-bbc3-5dcfaa78e309)
+![image](https://github.com/shanuhalli/MySQL-Basics-to-HackerRank/assets/109328924/3d95dae5-c23d-4790-b8fe-799fdfa80f36)
 
 ### where LAT_N is the northern latitude and LONG_W is the western longitude.
 
@@ -175,7 +175,8 @@ RIGHT(CITY,1) NOT IN ('A','E','I','O','U');
 ```
 
 ### The STUDENTS table is described as follows: 
-![image](https://github.com/shanuhalli/Practice-MySQL/assets/109328924/680963aa-a36c-4d89-9c36-d1bf9f0e0f01)
+
+![image](https://github.com/shanuhalli/MySQL-Basics-to-HackerRank/assets/109328924/a8dbdbe0-9a7d-4111-8196-0ab64132320d)
 
 ### The Name column only contains uppercase (A-Z) and lowercase (a-z) letters.
 
@@ -189,7 +190,8 @@ SELECT NAME FROM STUDENTS WHERE MARKS > 75 ORDER BY RIGHT(NAME,3), ID ASC;
 ```
 
 ### The Employee table containing employee data for a company is described as follows:
-![image](https://github.com/shanuhalli/Practice-MySQL/assets/109328924/382d5f81-1816-4e9f-b024-a76d0bcee3f5)
+
+![image](https://github.com/shanuhalli/MySQL-Basics-to-HackerRank/assets/109328924/aa67796f-863e-4097-be17-b75d3a3f5e2c)
 
 ### where employee_id is an employee's ID number, name is their name, months is the total number of months they've been working for the company, and salary is their monthly salary.
 
@@ -230,7 +232,7 @@ Write a query identifying the type of each record in the TRIANGLES table using i
 
 ### The TRIANGLES table is described as follows:
 
-![image](https://github.com/shanuhalli/MySQL-Basics-to-HackerRank/assets/109328924/626377ad-5d9a-4836-b622-c4cc3fcbbd97)
+![image](https://github.com/shanuhalli/MySQL-Basics-to-HackerRank/assets/109328924/50d5242c-f1e5-4a90-967b-aef199d04dff)
 
 ### Each row in the table denotes the lengths of each of a triangle's three sides.
 
@@ -260,7 +262,7 @@ where [occupation_count] is the number of occurrences of an occupation in OCCUPA
 
 ### The OCCUPATIONS table is described as follows: 
 
-![image](https://github.com/shanuhalli/MySQL-Basics-to-HackerRank/assets/109328924/76b251c4-5d1f-4293-9dd8-b4abc881ba36)
+![image](https://github.com/shanuhalli/MySQL-Basics-to-HackerRank/assets/109328924/28387ec2-949b-4c04-b0f6-687937f15828)
 
 ### Occupation will only contain one of the following values: Doctor, Professor, Singer or Actor.
 
@@ -283,7 +285,7 @@ Pivot the Occupation column in OCCUPATIONS so that each Name is sorted alphabeti
 
 ### The OCCUPATIONS table is described as follows:
 
-![image](https://github.com/shanuhalli/MySQL-Basics-to-HackerRank/assets/109328924/ee38ac39-4ebc-4646-b29d-116ffa389076)
+![image](https://github.com/shanuhalli/MySQL-Basics-to-HackerRank/assets/109328924/3ef07643-e2fe-40b2-a205-101d4ae88d0c)
 
 ### Occupation will only contain one of the following values: Doctor, Professor, Singer or Actor.
 
@@ -310,7 +312,7 @@ GROUP BY NameOrder) AS NAMES
 
 You are given a table, BST, containing two columns: N and P, where N represents the value of a node in Binary Tree, and P is the parent of N.
 
-![image](https://github.com/shanuhalli/MySQL-Basics-to-HackerRank/assets/109328924/57720329-4942-4978-9f8e-a77c13a858da)
+![image](https://github.com/shanuhalli/MySQL-Basics-to-HackerRank/assets/109328924/5d771e72-edba-45fd-9c83-ad9c2c1e2f49)
 
 Write a query to find the node type of Binary Tree ordered by the value of the node. Output one of the following for each node:
 
@@ -336,7 +338,7 @@ ORDER BY N;
 
 Amber's conglomerate corporation just acquired some new companies. Each of the companies follows this hierarchy:
 
-![image](https://github.com/shanuhalli/MySQL-Basics-to-HackerRank/assets/109328924/c0761a63-1bd1-4348-915e-e59fe3ba07b8)
+![image](https://github.com/shanuhalli/MySQL-Basics-to-HackerRank/assets/109328924/5ecc92ed-185e-421e-960f-598621b477c4)
 
 Given the table schemas below, write a query to print the company_code, founder name, total number of lead managers, total number of senior managers, total number of managers, and total number of employees. Order your output by ascending company_code.
 
@@ -351,23 +353,23 @@ The following tables contain company data:
 
 •	Company: The company_code is the code of the company and founder is the founder of the 
 
-![image](https://github.com/shanuhalli/MySQL-Basics-to-HackerRank/assets/109328924/2672b9f6-d808-469a-875a-0ce0c2d395cb)
+![image](https://github.com/shanuhalli/MySQL-Basics-to-HackerRank/assets/109328924/7595b942-f5b1-4613-a0e5-def6eb0e6e47)
 
 •	Lead_Manager: The lead_manager_code is the code of the lead manager, and the company_code is the code of the working company.
 
-![image](https://github.com/shanuhalli/MySQL-Basics-to-HackerRank/assets/109328924/f3e36eec-b01d-4581-9ea5-6ebc9563a180)
+![image](https://github.com/shanuhalli/MySQL-Basics-to-HackerRank/assets/109328924/29803f25-08ae-48b5-80f5-eab4cc693731)
 
 •	Senior_Manager: The senior_manager_code is the code of the senior manager, the lead_manager_code is the code of its lead manager, and the company_code is the code of the working company. 
 
-![image](https://github.com/shanuhalli/MySQL-Basics-to-HackerRank/assets/109328924/b098aa06-cc38-49db-941c-064423ed319e)
+![image](https://github.com/shanuhalli/MySQL-Basics-to-HackerRank/assets/109328924/1d08f461-d684-4b62-a62c-28d21e6a07b5)
 
 •	Manager: The manager_code is the code of the manager, the senior_manager_code is the code of its senior manager, the lead_manager_code is the code of its lead manager, and the company_code is the code of the working company. 
 
-![image](https://github.com/shanuhalli/MySQL-Basics-to-HackerRank/assets/109328924/34d22425-9678-4715-854f-e30a1fde25d5)
+![image](https://github.com/shanuhalli/MySQL-Basics-to-HackerRank/assets/109328924/eab932f4-fb3f-49cd-8c84-4e59f92d8669)
 
 •	Employee: The employee_code is the code of the employee, the manager_code is the code of its manager, the senior_manager_code is the code of its senior manager, the lead_manager_code is the code of its lead manager, and the company_code is the code of the working company.
 
-![image](https://github.com/shanuhalli/MySQL-Basics-to-HackerRank/assets/109328924/5d3ca0b7-7ab7-41aa-b1aa-c80619f78d88)
+![image](https://github.com/shanuhalli/MySQL-Basics-to-HackerRank/assets/109328924/707aed37-56ed-41bb-b023-849d98e1937d)
 
 Solution:
 ```sql
@@ -396,7 +398,7 @@ ORDER BY C.COMPANY_CODE ASC;
     
 ### The CITY table is described as follows:
 
-![image](https://github.com/shanuhalli/MySQL-Basics-to-HackerRank/assets/109328924/f31bf21c-e26a-4b11-ad94-22141a47d2d5)
+![image](https://github.com/shanuhalli/MySQL-Basics-to-HackerRank/assets/109328924/a7d9f7f8-3dbf-41c2-9db9-da9392eb196e)
 
 ## Q1. Revising Aggregations - The Count Function
 
@@ -460,7 +462,7 @@ Write a query calculating the amount of error (i.e.: Actual - Miscalculated aver
 
 ### The EMPLOYEES table is described as follows:
 
-![image](https://github.com/shanuhalli/MySQL-Basics-to-HackerRank/assets/109328924/42239c9f-7993-4065-939c-fedf04539086)
+![image](https://github.com/shanuhalli/MySQL-Basics-to-HackerRank/assets/109328924/accbce70-5ac6-4d83-a916-882ad51ad456)
  
 **Note:** Salary is per month.
 
@@ -476,7 +478,7 @@ We define an employee's total earnings to be their monthly salary * months worke
 
 ### The Employee table containing employee data for a company is described as follows:
 
-![image](https://github.com/shanuhalli/MySQL-Basics-to-HackerRank/assets/109328924/982aa094-9312-478c-b225-ec6b798ddc32)
+![image](https://github.com/shanuhalli/MySQL-Basics-to-HackerRank/assets/109328924/c1fafa99-e15b-4225-819f-d24acfaaabf9)
  
 where employee_id is an employee's ID number, name is their name, months is the total number of months they've been working for the company, and salary is their monthly salary.
 
@@ -489,7 +491,8 @@ LIMIT 1;
 ```
 
 ### The STATION table is described as follows:
-![image](https://github.com/shanuhalli/MySQL-Basics-to-HackerRank/assets/109328924/d040f364-5f7f-4f10-b68f-03f1677599e7)
+
+![image](https://github.com/shanuhalli/MySQL-Basics-to-HackerRank/assets/109328924/0ed15699-ce19-4d45-ba25-5c2a5f8f1234)
 
 ### where LAT_N is the northern latitude and LONG_W is the western longitude.
 
@@ -585,6 +588,76 @@ Solution:
 SELECT CAST (LAT_N AS DECIMAL (7,4))
 FROM (SELECT LAT_N, ROW_NUMBER () OVER (ORDER BY LAT_N) as ROWNU FROM STATION) AS X
 WHERE ROWNU = (SELECT ROUND((COUNT(LAT_N)+1)/2,0) FROM STATION);
+```
+
+</details>
+
+<details>
+  <summary><h2>4. Basic Join<h2></summary>
+  <br/>
+
+### The CITY and COUNTRY tables are described as follows:
+
+![image](https://github.com/shanuhalli/MySQL-Basics-to-HackerRank/assets/109328924/aff0b1fa-993f-4360-aa18-70bbe956ee84)
+![image](https://github.com/shanuhalli/MySQL-Basics-to-HackerRank/assets/109328924/d460e5e1-fe5a-4007-8b39-6ee22317d97a)
+
+## Q1. Population Census
+Given the CITY and COUNTRY tables, query the sum of the populations of all cities where the CONTINENT is 'Asia'.
+Note: CITY.CountryCode and COUNTRY.Code are matching key columns.
+
+Solution:
+```sql
+SELECT SUM(CITY.POPULATION) FROM CITY
+JOIN COUNTRY ON CITY.COUNTRYCODE = COUNTRY.CODE
+WHERE COUNTRY.CONTINENT = 'ASIA';
+```
+
+## Q2. African Cities
+Given the CITY and COUNTRY tables, query the names of all cities where the CONTINENT is 'Africa'.
+Note: CITY.CountryCode and COUNTRY.Code are matching key columns.
+
+Solution:
+```sql
+SELECT CITY.NAME FROM CITY
+JOIN COUNTRY ON CITY.COUNTRYCODE = COUNTRY.CODE
+WHERE COUNTRY.CONTINENT = 'Africa';
+```
+
+## Q3. Average Population of Each Continent
+Given the CITY and COUNTRY tables, query the names of all the continents (COUNTRY.Continent) and their respective average city populations (CITY.Population) rounded down to the nearest integer.
+Note: CITY.CountryCode and COUNTRY.Code are matching key columns.
+
+Solution:
+```sql
+SELECT COUNTRY.CONTINENT, FLOOR(AVG(CITY.POPULATION)) FROM COUNTRY
+JOIN CITY ON COUNTRY.CODE = CITY.COUNTRYCODE
+GROUP BY COUNTRY.CONTINENT;
+```
+
+## Q4. The Report
+You are given two tables: Students and Grades. Students contains three columns ID, Name and Marks.
+
+![image](https://github.com/shanuhalli/MySQL-Basics-to-HackerRank/assets/109328924/9f94fd1a-e0c4-4f5a-bdb2-822ae4d85ce9)
+
+Grades contains the following data:
+
+![image](https://github.com/shanuhalli/MySQL-Basics-to-HackerRank/assets/109328924/afe8a89c-582d-400a-a158-64f25dd60765)
+
+
+Ketty gives Eve a task to generate a report containing three columns: Name, Grade and Mark. Ketty doesn't want the NAMES of those students who received a grade lower than 8. The report must be in descending order by grade -- i.e. higher grades are entered first. If there is more than one student with the same grade (8-10) assigned to them, order those particular students by their name alphabetically. Finally, if the grade is lower than 8, use "NULL" as their name and list them by their grades in descending order. If there is more than one student with the same grade (1-7) assigned to them, order those particular students by their marks in ascending order.
+
+Write a query to help Eve.
+
+Solution:
+```sql
+SELECT 
+    CASE WHEN Grade >= 8 THEN Name END, 
+    Grade, 
+    Marks
+FROM Students
+JOIN Grades
+ON Marks BETWEEN Min_Mark AND Max_Mark
+ORDER BY Grade DESC, Name, Marks;
 ```
 
 </details>
