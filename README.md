@@ -660,4 +660,64 @@ ON Marks BETWEEN Min_Mark AND Max_Mark
 ORDER BY Grade DESC, Name, Marks;
 ```
 
+## Q5. Top Competitors
+Julia just finished conducting a coding contest, and she needs your help assembling the leaderboard! Write a query to print the respective hacker_id and name of hackers who achieved full scores for more than one challenge. Order your output in descending order by the total number of challenges in which the hacker earned a full score. If more than one hacker received full scores in same number of challenges, then sort them by ascending hacker_id.
+
+The following tables contain contest data:
+
+•	Hackers: The hacker_id is the id of the hacker, and name is the name of the hacker.
+
+![image](https://github.com/shanuhalli/MySQL-Basics-to-HackerRank/assets/109328924/12c5f8c2-d3c1-46ef-9125-3554b7ffd3c8)
+  
+•	Difficulty: The difficult_level is the level of difficulty of the challenge, and score is the score of the challenge for the difficulty level. 
+
+![image](https://github.com/shanuhalli/MySQL-Basics-to-HackerRank/assets/109328924/7da96c42-8973-42aa-88f2-2ae995a64f6a)
+
+•	Challenges: The challenge_id is the id of the challenge, the hacker_id is the id of the hacker who created the challenge, and difficulty_level is the level of difficulty of the challenge.
+
+![image](https://github.com/shanuhalli/MySQL-Basics-to-HackerRank/assets/109328924/50a833ad-5180-48d7-a204-a36d2a0b9070)
+
+•	Submissions: The submission_id is the id of the submission, hacker_id is the id of the hacker who made the submission, challenge_id is the id of the challenge that the submission belongs to, and score is the score of the submission.
+
+![image](https://github.com/shanuhalli/MySQL-Basics-to-HackerRank/assets/109328924/2034fcd3-3ca4-48ca-b626-48d5f1d9bde8)
+
+Solution:
+```sql
+SELECT H.HACKER_ID, H.NAME FROM HACKERS H
+INNER JOIN SUBMISSIONS S ON H.HACKER_ID = S.HACKER_ID
+INNER JOIN CHALLENGES C ON S.CHALLENGE_ID = C.CHALLENGE_ID
+INNER JOIN DIFFICULTY D ON C.DIFFICULTY_LEVEL = D.DIFFICULTY_LEVEL
+
+WHERE S.SCORE = D.SCORE AND C.DIFFICULTY_LEVEL = D.DIFFICULTY_LEVEL
+GROUP BY H.HACKER_ID, H.NAME
+HAVING COUNT(S.HACKER_ID) > 1
+ORDER BY COUNT(S.HACKER_ID) DESC, S.HACKER_ID ASC;
+```
+
+## Q6. Ollivander's Inventory
+Harry Potter and his friends are at Ollivander's with Ron, finally replacing Charlie's old broken wand.
+Hermione decides the best way to choose is by determining the minimum number of gold galleons needed to buy each non-evil wand of high power and age. Write a query to print the id, age, coins_needed, and power of the wands that Ron's interested in, sorted in order of descending power. If more than one wand has same power, sort the result in order of descending age.
+
+The following tables contain data on the wands in Ollivander's inventory:
+
+•	Wands: The id is the id of the wand, code is the code of the wand, coins_needed is the total number of gold galleons needed to buy the wand, and power denotes the quality of the wand (the higher the power, the better the wand is).
+
+![image](https://github.com/shanuhalli/MySQL-Basics-to-HackerRank/assets/109328924/32301f24-1948-4774-8411-decc4c55ef23)
+
+•	Wands_Property: The code is the code of the wand, age is the age of the wand, and is_evil denotes whether the wand is good for the dark arts. If the value of is_evil is 0, it means that the wand is not evil. The mapping between code and age is one-one, meaning that if there are two pairs, (code1, age1) and (code2, age2), then code1 ≠ code2 and age1 ≠ age2.
+
+![image](https://github.com/shanuhalli/MySQL-Basics-to-HackerRank/assets/109328924/15b1fea3-e1fd-429e-b8c2-ddc842c3c4e0)
+
+Solution:
+```sql
+SELECT W.ID, P.AGE, W.COINS_NEEDED, W.POWER FROM WANDS AS W
+JOIN WANDS_PROPERTY AS P ON (W.CODE = P.CODE) 
+WHERE P.IS_EVIL = 0 AND W.COINS_NEEDED = (SELECT MIN(COINS_NEEDED) 
+                                          FROM WANDS AS X
+                                          JOIN WANDS_PROPERTY AS Y 
+                                          ON (X.CODE = Y.CODE) 
+                                          WHERE X.POWER = W.POWER AND Y.AGE = P.AGE) 
+ORDER BY W.POWER DESC, P.AGE DESC;
+```
+
 </details>
